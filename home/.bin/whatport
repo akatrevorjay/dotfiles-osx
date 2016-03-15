@@ -1,0 +1,3 @@
+#!/bin/bash -e
+PORT="$1"
+sudo lsof -i"TCP:$PORT" -s"TCP:LISTEN"

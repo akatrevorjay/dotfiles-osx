@@ -1,0 +1,4 @@
+#!/bin/bash -exv
+[[ $# -gt 0 ]] || set -- $(which python)
+#codesign -f -s - "$1"
+codesign -f -s trevorj-fbh-codesign "$1"

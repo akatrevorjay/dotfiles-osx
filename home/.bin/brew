@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# In this file, set HOMEBREW_GITHUB_API_TOKEN
+[ ! -e "$HOME/.local/brew.inc" ] || source "$HOME/.local/brew.inc"
+
+PYENV_VERSION=system
+export PYENV_VERSION HOMEBREW_GITHUB_API_TOKEN
+exec /usr/local/bin/brew "$@"
